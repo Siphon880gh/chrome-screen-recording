@@ -4,9 +4,16 @@
 
 #
 
-This repository provides a minimal example of how to create a Chrome extension that records the user's screen allowing navigation or URL changes on the current tab.
+This repository provides a minimal example of how to create a Chrome extension that records the user's screen, window, or Chrome tab allowing navigation or URL changes on the current tab.
 
 This functionality was previously only achievable with the deprecated manifest v2, making this an example implementation using manifest v3.
+
+## Features
+
+- **Record any Chrome tab**: You can select and record any open Chrome tab with a preview interface that shows all available tabs for easy selection.
+- **Record any screen or window**: Capture your entire screen, specific application windows, or individual monitors with flexible recording options.
+
+![Chrome Tab Selection](readme/feature--chrome-tab.png)
 
 ## Some issues that motivated this repo
 

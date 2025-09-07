@@ -1,6 +1,6 @@
-const startRecording = async () => {
+const startRecording = async (recordAudio = false) => {
   await chrome.tabs.query({'active': true, 'lastFocusedWindow': true, 'currentWindow': true}, async function (tabs) {
-    // Get current tab to focus on it after start recording on recording screen tab
+    // Get current tab to record
     const currentTab = tabs[0];
 
     // Create recording screen tab
@@ -19,6 +19,7 @@ const startRecording = async () => {
           name: 'startRecordingOnBackground',
           body: {
             currentTab: currentTab,
+            recordAudio: recordAudio,
           },
         });
       }
@@ -29,6 +30,6 @@ const startRecording = async () => {
 // Listen for startRecording message from popup.js
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.name === 'startRecording') {
-    startRecording();
+    startRecording(request.recordAudio);
   }
 });

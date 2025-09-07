@@ -1,8 +1,44 @@
 <!DOCTYPE html>
 <head>
   <script src="popup.js"></script>
+  <style>
+    body {
+      width: 200px;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+    }
+    .option {
+      margin-bottom: 12px;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #3367d6;
+    }
+  </style>
 </head>
 
 <body>
   <button id="startRecordingButton">Start recording</button>
+  <div class="option">
+    <label>
+      <input type="checkbox" id="recordAudio">
+      Record audio
+    </label>
+  </div>
 </body>

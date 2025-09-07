@@ -1,6 +1,6 @@
 {
-  "name": "Window Recording",
-  "description": "Minimal example for recording any screen/window in manifest V3, allowing redirection on current tab",
+  "name": "Tab Recording",
+  "description": "Minimal example for recording any Chrome tab or any screen/window in manifest V3",
   "version": "1.0",
   "manifest_version": 3,
   "action":{
