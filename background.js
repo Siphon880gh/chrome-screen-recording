@@ -1,6 +1,6 @@
 const startRecording = async () => {
   await chrome.tabs.query({'active': true, 'lastFocusedWindow': true, 'currentWindow': true}, async function (tabs) {
-    // Get current tab to focus on it after start recording on recording screen tab
+    // Get current tab to record
     const currentTab = tabs[0];
 
     // Create recording screen tab
