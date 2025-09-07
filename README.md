@@ -11,9 +11,14 @@ This functionality was previously only achievable with the deprecated manifest v
 ## Features
 
 - **Record any Chrome tab**: You can select and record any open Chrome tab with a preview interface that shows all available tabs for easy selection.
-- **Record any screen or window**: Capture your entire screen, specific application windows, or individual monitors with flexible recording options.
 
 ![Chrome Tab Selection](readme/feature--chrome-tab.png)
+
+- **Record any screen or window**: Capture your entire screen, specific application windows, or individual monitors with flexible recording options.
+- **Optional audio recording**: Choose whether to include audio in your recording.
+
+![Record Audio](readme/feature--record-audio.png)
+
 
 ## Some issues that motivated this repo
 
